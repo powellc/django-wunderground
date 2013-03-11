@@ -9,7 +9,7 @@ from django.core.cache import cache
 
 class CurrentWeatherPlugin(CMSPluginBase):
     name = _("Current Local Weather")
-    render_template = "cmsplugin_wunderground/local_weather.html"
+    render_template = "wunderground/local_weather.html"
     
     def render(self, context, instance, placeholder):
         request = context['request']
