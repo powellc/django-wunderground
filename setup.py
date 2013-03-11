@@ -13,11 +13,11 @@ install_requires = [
 setup(
     name = "django-wunderground",
     version = version,
-    url = 'http://github.com/megamark16/django-wunderground',
+    url = 'http://github.com/powellc/django-wunderground',
     license = 'BSD',
     platforms=['OS Independent'],
     description = "An extension for Django CMS and a template tag that displays the current local weather pulled from  wunderground.com",
-    author = "Mark Ransom, colin.powell@gmail.com",
+    author = "Mark Ransom, Colin Powell",
     author_email = 'megamark16@gmail.com, colin.powell@gmail.com',
     packages=find_packages(),
     install_requires = install_requires,
