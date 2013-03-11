@@ -37,3 +37,17 @@ or ``wunderground/local_weather_tag.html``
 templates.  Any of the fields from the wunderground.com "conditions" api
 call should be available in the template under the context variable 
 ``weather_info``.
+
+Template tag
+-------------
+
+This library provides a simple template tag:
+::
+    {% current_weather %}
+
+When provided with a variable, it attempts to look it up using WUnderground's
+geocode API, which usually expects a ZIP/Postal code:
+::
+    {% current_weather '04421' %}
+
+Will display the weather in Castine, Maine.
